@@ -50,6 +50,12 @@ var fila="<tr><td class='id'></td><td class='foto'></td><td class='price'></td><
 		fotos[nfila].innerHTML="<img src='"+productos[nfila].image+"'>";
 		fotos[nfila].firstChild.setAttribute("onclick","window.open('"+productos[nfila].image+"');" );
 		}
+		// Agregar datos "Guía #61b" y "RN22001" al listado
+		document.querySelector(".container").insertAdjacentHTML('beforeend', `
+			<p>Guía #61b</p>
+			<p>RN22001</p>
+			<p>ELEAZAR RIVAS</p>
+		  `);
 	}
 
 function obtenerProductos() {
