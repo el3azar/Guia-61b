@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Ejemplo Web API - Guía #61b</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="estilo.css">
+  <script src="codigo.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ejemplo Web API - Guía #61b</h1>
+    <p>ID del Proyecto: RN22001</p>
+    <p>ELEAZAR RIVAS</p>
+    <button onclick="obtenerProductos(); this.style.display='none';" class="btn-primary">Obtener Productos</button>
+
+    <div id="listado" style="display: none;">
+      <form name="filtroprods" id="filtroprods" class="filter-form">
+        <label>Seleccione Categorías:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="c1" value="c1" checked> Electrónicos</label>
+          <label><input type="checkbox" id="c2" value="c2" checked> Joyería</label>
+          <label><input type="checkbox" id="c3" value="c3" checked> Ropa Caballero</label>
+          <label><input type="checkbox" id="c4" value="c4" checked> Ropa Dama</label>
+        </div>
+      </form>
+
+      <ol>
+        <li>Click en la imagen para acercamiento</li>
+        <li>Click en precio para ordenar ascendente o descendente</li>
+      </ol>
+
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Foto</th>
+            <th id="price">Precio</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Categoría</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
